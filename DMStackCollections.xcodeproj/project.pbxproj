@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AA21A118039412281DED964 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8ECD95DA974FDDB02E7DC6 /* libPods.a */; };
+		B386483119C8121A00A0ECF2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B386483019C8121A00A0ECF2 /* MapKit.framework */; };
+		B386483419C86C2300A0ECF2 /* DMStackControllerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = B386483319C86C2300A0ECF2 /* DMStackControllerAnimatedTransitioning.m */; };
+		B386483A19C9A63400A0ECF2 /* DMStackCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B386483919C9A63400A0ECF2 /* DMStackCollectionLayout.m */; };
+		B386483D19CAAE7900A0ECF2 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = B386483C19CAAE7900A0ECF2 /* ViewController3.m */; };
+		B39F119419C2D4760085B0ED /* DMStackExtControllerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = B39F119319C2D4760085B0ED /* DMStackExtControllerAnimatedTransitioning.m */; };
+		B39F119719C2E62A0085B0ED /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = B39F119619C2E62A0085B0ED /* ViewController2.m */; };
+		B3C6543F19C1633700EE1B93 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C6543E19C1633700EE1B93 /* CoreImage.framework */; };
+		B3C6544119C1634600EE1B93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C6544019C1634600EE1B93 /* UIKit.framework */; };
+		B3C6544319C168BD00EE1B93 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C6544219C168BD00EE1B93 /* QuartzCore.framework */; };
+		B3C6544519C168C500EE1B93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C6544419C168C500EE1B93 /* CoreGraphics.framework */; };
+		B3C6544E19C2C91300EE1B93 /* DMStackCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6544D19C2C91300EE1B93 /* DMStackCollectionViewCell.m */; };
+		B3FD254819C08C2F004EF6BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FD254719C08C2F004EF6BC /* main.m */; };
+		B3FD254B19C08C2F004EF6BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FD254A19C08C2F004EF6BC /* AppDelegate.m */; };
+		B3FD254E19C08C2F004EF6BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FD254D19C08C2F004EF6BC /* ViewController.m */; };
+		B3FD255119C08C2F004EF6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FD254F19C08C2F004EF6BC /* Main.storyboard */; };
+		B3FD255319C08C2F004EF6BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FD255219C08C2F004EF6BC /* Images.xcassets */; };
+		B3FD255F19C08C30004EF6BC /* DMStackCollectionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FD255E19C08C30004EF6BC /* DMStackCollectionsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3FD255919C08C30004EF6BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3FD253A19C08C2F004EF6BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3FD254119C08C2F004EF6BC;
+			remoteInfo = DMStackNotifications;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F8ECD95DA974FDDB02E7DC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE5674533214830B4E8E309 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B386483019C8121A00A0ECF2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B386483219C86C2300A0ECF2 /* DMStackControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMStackControllerAnimatedTransitioning.h; path = Classes/DMStackControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
+		B386483319C86C2300A0ECF2 /* DMStackControllerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMStackControllerAnimatedTransitioning.m; path = Classes/DMStackControllerAnimatedTransitioning.m; sourceTree = "<group>"; };
+		B386483819C9A63400A0ECF2 /* DMStackCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMStackCollectionLayout.h; path = Classes/DMStackCollectionLayout.h; sourceTree = "<group>"; };
+		B386483919C9A63400A0ECF2 /* DMStackCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMStackCollectionLayout.m; path = Classes/DMStackCollectionLayout.m; sourceTree = "<group>"; };
+		B386483B19CAAE7900A0ECF2 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		B386483C19CAAE7900A0ECF2 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		B39F119219C2D4760085B0ED /* DMStackExtControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMStackExtControllerAnimatedTransitioning.h; path = Classes/DMStackExtControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
+		B39F119319C2D4760085B0ED /* DMStackExtControllerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMStackExtControllerAnimatedTransitioning.m; path = Classes/DMStackExtControllerAnimatedTransitioning.m; sourceTree = "<group>"; };
+		B39F119519C2E62A0085B0ED /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		B39F119619C2E62A0085B0ED /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		B3C6543E19C1633700EE1B93 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B3C6544019C1634600EE1B93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3C6544219C168BD00EE1B93 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B3C6544419C168C500EE1B93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3C6544C19C2C91300EE1B93 /* DMStackCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMStackCollectionViewCell.h; path = Classes/DMStackCollectionViewCell.h; sourceTree = "<group>"; };
+		B3C6544D19C2C91300EE1B93 /* DMStackCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMStackCollectionViewCell.m; path = Classes/DMStackCollectionViewCell.m; sourceTree = "<group>"; };
+		B3FD254219C08C2F004EF6BC /* DMStackCollections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMStackCollections.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FD254619C08C2F004EF6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FD254719C08C2F004EF6BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3FD254919C08C2F004EF6BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3FD254A19C08C2F004EF6BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3FD254C19C08C2F004EF6BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B3FD254D19C08C2F004EF6BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B3FD255019C08C2F004EF6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3FD255219C08C2F004EF6BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B3FD255819C08C30004EF6BC /* DMStackCollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMStackCollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FD255D19C08C30004EF6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FD255E19C08C30004EF6BC /* DMStackCollectionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMStackCollectionsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3FD253F19C08C2F004EF6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B386483119C8121A00A0ECF2 /* MapKit.framework in Frameworks */,
+				B3C6544519C168C500EE1B93 /* CoreGraphics.framework in Frameworks */,
+				B3C6544319C168BD00EE1B93 /* QuartzCore.framework in Frameworks */,
+				B3C6544119C1634600EE1B93 /* UIKit.framework in Frameworks */,
+				B3C6543F19C1633700EE1B93 /* CoreImage.framework in Frameworks */,
+				6AA21A118039412281DED964 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FD255519C08C30004EF6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B2C6242DD0F4F7B8C77B610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B386483019C8121A00A0ECF2 /* MapKit.framework */,
+				B3C6544419C168C500EE1B93 /* CoreGraphics.framework */,
+				B3C6544219C168BD00EE1B93 /* QuartzCore.framework */,
+				B3C6544019C1634600EE1B93 /* UIKit.framework */,
+				B3C6543E19C1633700EE1B93 /* CoreImage.framework */,
+				3F8ECD95DA974FDDB02E7DC6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3FD253919C08C2F004EF6BC = {
+			isa = PBXGroup;
+			children = (
+				B3FD256819C08E76004EF6BC /* Classes */,
+				B3FD254419C08C2F004EF6BC /* DMStackCollections */,
+				B3FD255B19C08C30004EF6BC /* DMStackCollectionsTests */,
+				B3FD254319C08C2F004EF6BC /* Products */,
+				5BE5674533214830B4E8E309 /* Pods.xcconfig */,
+				7B2C6242DD0F4F7B8C77B610 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3FD254319C08C2F004EF6BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD254219C08C2F004EF6BC /* DMStackCollections.app */,
+				B3FD255819C08C30004EF6BC /* DMStackCollectionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3FD254419C08C2F004EF6BC /* DMStackCollections */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD254F19C08C2F004EF6BC /* Main.storyboard */,
+				B3FD255219C08C2F004EF6BC /* Images.xcassets */,
+				B3FD254519C08C2F004EF6BC /* Supporting Files */,
+				B3FD254919C08C2F004EF6BC /* AppDelegate.h */,
+				B3FD254A19C08C2F004EF6BC /* AppDelegate.m */,
+				B3FD254C19C08C2F004EF6BC /* ViewController.h */,
+				B3FD254D19C08C2F004EF6BC /* ViewController.m */,
+				B39F119519C2E62A0085B0ED /* ViewController2.h */,
+				B39F119619C2E62A0085B0ED /* ViewController2.m */,
+				B386483B19CAAE7900A0ECF2 /* ViewController3.h */,
+				B386483C19CAAE7900A0ECF2 /* ViewController3.m */,
+			);
+			path = DMStackCollections;
+			sourceTree = "<group>";
+		};
+		B3FD254519C08C2F004EF6BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD254619C08C2F004EF6BC /* Info.plist */,
+				B3FD254719C08C2F004EF6BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3FD255B19C08C30004EF6BC /* DMStackCollectionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD255E19C08C30004EF6BC /* DMStackCollectionsTests.m */,
+				B3FD255C19C08C30004EF6BC /* Supporting Files */,
+			);
+			path = DMStackCollectionsTests;
+			sourceTree = "<group>";
+		};
+		B3FD255C19C08C30004EF6BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD255D19C08C30004EF6BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3FD256819C08E76004EF6BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B386483819C9A63400A0ECF2 /* DMStackCollectionLayout.h */,
+				B386483919C9A63400A0ECF2 /* DMStackCollectionLayout.m */,
+				B3C6544C19C2C91300EE1B93 /* DMStackCollectionViewCell.h */,
+				B3C6544D19C2C91300EE1B93 /* DMStackCollectionViewCell.m */,
+				B386483219C86C2300A0ECF2 /* DMStackControllerAnimatedTransitioning.h */,
+				B386483319C86C2300A0ECF2 /* DMStackControllerAnimatedTransitioning.m */,
+				B39F119219C2D4760085B0ED /* DMStackExtControllerAnimatedTransitioning.h */,
+				B39F119319C2D4760085B0ED /* DMStackExtControllerAnimatedTransitioning.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3FD254119C08C2F004EF6BC /* DMStackCollections */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FD256219C08C30004EF6BC /* Build configuration list for PBXNativeTarget "DMStackCollections" */;
+			buildPhases = (
+				656D3404729B46D093E96AB8 /* Check Pods Manifest.lock */,
+				B3FD253E19C08C2F004EF6BC /* Sources */,
+				B3FD253F19C08C2F004EF6BC /* Frameworks */,
+				B3FD254019C08C2F004EF6BC /* Resources */,
+				29F1D58966414F8FB3DA4F1C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMStackCollections;
+			productName = DMStackNotifications;
+			productReference = B3FD254219C08C2F004EF6BC /* DMStackCollections.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3FD255719C08C30004EF6BC /* DMStackCollectionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FD256519C08C30004EF6BC /* Build configuration list for PBXNativeTarget "DMStackCollectionsTests" */;
+			buildPhases = (
+				B3FD255419C08C30004EF6BC /* Sources */,
+				B3FD255519C08C30004EF6BC /* Frameworks */,
+				B3FD255619C08C30004EF6BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3FD255A19C08C30004EF6BC /* PBXTargetDependency */,
+			);
+			name = DMStackCollectionsTests;
+			productName = DMStackNotificationsTests;
+			productReference = B3FD255819C08C30004EF6BC /* DMStackCollectionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3FD253A19C08C2F004EF6BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Demdxx;
+				TargetAttributes = {
+					B3FD254119C08C2F004EF6BC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					B3FD255719C08C30004EF6BC = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = B3FD254119C08C2F004EF6BC;
+					};
+				};
+			};
+			buildConfigurationList = B3FD253D19C08C2F004EF6BC /* Build configuration list for PBXProject "DMStackCollections" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3FD253919C08C2F004EF6BC;
+			productRefGroup = B3FD254319C08C2F004EF6BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3FD254119C08C2F004EF6BC /* DMStackCollections */,
+				B3FD255719C08C30004EF6BC /* DMStackCollectionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3FD254019C08C2F004EF6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FD255119C08C2F004EF6BC /* Main.storyboard in Resources */,
+				B3FD255319C08C2F004EF6BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FD255619C08C30004EF6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29F1D58966414F8FB3DA4F1C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		656D3404729B46D093E96AB8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3FD253E19C08C2F004EF6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C6544E19C2C91300EE1B93 /* DMStackCollectionViewCell.m in Sources */,
+				B3FD254E19C08C2F004EF6BC /* ViewController.m in Sources */,
+				B386483D19CAAE7900A0ECF2 /* ViewController3.m in Sources */,
+				B39F119419C2D4760085B0ED /* DMStackExtControllerAnimatedTransitioning.m in Sources */,
+				B3FD254B19C08C2F004EF6BC /* AppDelegate.m in Sources */,
+				B386483419C86C2300A0ECF2 /* DMStackControllerAnimatedTransitioning.m in Sources */,
+				B39F119719C2E62A0085B0ED /* ViewController2.m in Sources */,
+				B386483A19C9A63400A0ECF2 /* DMStackCollectionLayout.m in Sources */,
+				B3FD254819C08C2F004EF6BC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FD255419C08C30004EF6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FD255F19C08C30004EF6BC /* DMStackCollectionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3FD255A19C08C30004EF6BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3FD254119C08C2F004EF6BC /* DMStackCollections */;
+			targetProxy = B3FD255919C08C30004EF6BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3FD254F19C08C2F004EF6BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3FD255019C08C2F004EF6BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3FD256019C08C30004EF6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3FD256119C08C30004EF6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3FD256319C08C30004EF6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE5674533214830B4E8E309 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DMStackNotifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = DMStackCollections;
+			};
+			name = Debug;
+		};
+		B3FD256419C08C30004EF6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE5674533214830B4E8E309 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DMStackNotifications/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = DMStackCollections;
+			};
+			name = Release;
+		};
+		B3FD256619C08C30004EF6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DMStackNotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = DMStackCollectionsTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMStackNotifications.app/DMStackNotifications";
+			};
+			name = Debug;
+		};
+		B3FD256719C08C30004EF6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DMStackNotificationsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = DMStackCollectionsTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMStackNotifications.app/DMStackNotifications";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3FD253D19C08C2F004EF6BC /* Build configuration list for PBXProject "DMStackCollections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FD256019C08C30004EF6BC /* Debug */,
+				B3FD256119C08C30004EF6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FD256219C08C30004EF6BC /* Build configuration list for PBXNativeTarget "DMStackCollections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FD256319C08C30004EF6BC /* Debug */,
+				B3FD256419C08C30004EF6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FD256519C08C30004EF6BC /* Build configuration list for PBXNativeTarget "DMStackCollectionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FD256619C08C30004EF6BC /* Debug */,
+				B3FD256719C08C30004EF6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3FD253A19C08C2F004EF6BC /* Project object */;
+}

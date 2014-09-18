@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kef-SI-Czr">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="QTi-zT-T4b">
+            <objects>
+                <collectionViewController id="Kef-SI-Czr" customClass="ViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="uvo-pe-lZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iWb-uc-3bq" customClass="DMStackNotificationsLayout">
+                            <size key="itemSize" width="302" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="Cell" id="vbF-Y2-8DI" customClass="DMStackNotificationViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="302" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDS-vo-koy">
+                                            <rect key="frame" x="40" y="14" width="223" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.24295502050000001" green="0.47534677930000002" blue="0.01056326176" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="vDS-vo-koy" secondAttribute="trailing" constant="31" id="HrC-xK-LyK"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="vDS-vo-koy" secondAttribute="bottom" constant="7" id="S5b-uW-e9u"/>
+                                    <constraint firstItem="vDS-vo-koy" firstAttribute="top" secondItem="vbF-Y2-8DI" secondAttribute="topMargin" constant="6" id="eqU-3K-q3T"/>
+                                    <constraint firstItem="vDS-vo-koy" firstAttribute="leading" secondItem="vbF-Y2-8DI" secondAttribute="leadingMargin" constant="32" id="ryN-bU-SxC"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Kef-SI-Czr" id="ksE-ZJ-PbS"/>
+                            <outlet property="delegate" destination="Kef-SI-Czr" id="QVW-uT-wnu"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzS-5U-2h9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-131" y="-1290"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="wt0-ct-YCT">
+            <objects>
+                <viewController storyboardIdentifier="controller" id="GaG-k6-swO" customClass="ViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mL9-Zg-eXf"/>
+                        <viewControllerLayoutGuide type="bottom" id="KHd-Je-ZpA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRK-LX-dS6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.33333334329999997" green="0.47450983520000001" blue="0.56078433989999998" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlJ-uq-OdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.5" y="-1613"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="KEs-E8-pgy">
+            <objects>
+                <viewController storyboardIdentifier="controller2" id="L48-l9-ukd" customClass="ViewController3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="seN-e3-mtI"/>
+                        <viewControllerLayoutGuide type="bottom" id="npz-Qa-BUf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kjy-PI-WNG">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNv-aq-gHT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="285" width="40" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onClose:" destination="L48-l9-ukd" eventType="touchUpInside" id="VEF-7q-dAn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="GNv-aq-gHT" secondAttribute="centerX" id="aPs-Vo-h7v"/>
+                            <constraint firstAttribute="centerY" secondItem="GNv-aq-gHT" secondAttribute="centerY" id="b7A-0S-aJ1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GNv-aq-gHT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="aPs-Vo-h7v"/>
+                                <exclude reference="b7A-0S-aJ1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GNv-aq-gHT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="aPs-Vo-h7v"/>
+                                <include reference="b7A-0S-aJ1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQF-AM-nWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.5" y="-943"/>
+        </scene>
+    </scenes>
+</document>
