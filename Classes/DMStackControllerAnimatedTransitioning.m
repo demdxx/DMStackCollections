@@ -16,6 +16,12 @@
 #define TAG_BLUR TAG_ITEM + 1
 #define TAG_BG TAG_ITEM + 2
 
+#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 80000
+  #define IS_IOS8 YES
+#else
+  #define IS_IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0f)
+#endif
+
 ////////////////////////////////////////////////////////////////////////////////
 
 @interface DMStackControllerAnimatedTransitioning ()
@@ -353,22 +359,78 @@
   CGPoint p = self.expandView.center;
   UIView *v = self.expandView.superview;
   
+  CGFloat offset = 0.f;
+  
   while (v) {
     if ([v isKindOfClass:[UIScrollView class]]) {
-      p.y -= ((UIScrollView *)v).contentOffset.y;
+      offset += ((UIScrollView *)v).contentOffset.y;
     }
     v = v.superview;
   }
+  
+  if (!IS_IOS8) {
+    UIViewController *cnt = nil;
+    
+    id nextResponder = [self.expandView nextResponder];
+    while ([nextResponder isKindOfClass:[UIView class]]) {
+      nextResponder = [nextResponder nextResponder];
+    }
+    if ([nextResponder isKindOfClass:[UIViewController class]]) {
+      cnt = nextResponder;
+    }
+    
+    if (nil != cnt) {
+      switch (cnt.interfaceOrientation) {
+        default:
+        case UIInterfaceOrientationPortrait:
+          p.y -= offset;
+          break;
+        case UIInterfaceOrientationPortraitUpsideDown:
+          p.y = cnt.view.frame.size.height - p.y + offset;
+          break;
+        case UIInterfaceOrientationLandscapeLeft:
+        {
+          p.y -= offset;
+          CGFloat v = p.x; p.x = p.y; p.y = v;
+        } break;
+        case UIInterfaceOrientationLandscapeRight:
+        {
+          p.y = cnt.view.frame.size.width - p.y + offset;
+          CGFloat v = p.x; p.x = p.y; p.y = v;
+        } break;
+      }
+    }
+  } else {
+    p.y -= offset;
+  }
+  
   return p;
 }
 
 - (CGRect)itemViewTargetRect:(id<UIViewControllerContextTransitioning>)transitionContext
 {
   UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-  CGRect targetRect = [transitionContext finalFrameForViewController:toVC];
+  CGRect targetRect = toVC.view.frame;
   CGRect rect = CGRectInset(_expandView.frame, -5.f, -5.f);
-  rect.origin.x = (targetRect.size.width-rect.size.width)/2.f;
-  rect.origin.y = (targetRect.size.height-rect.size.height)/2.f;
+  
+  if (!IS_IOS8) {
+    switch (toVC.interfaceOrientation) {
+      default:
+      case UIInterfaceOrientationPortrait:
+      case UIInterfaceOrientationPortraitUpsideDown:
+        rect.origin.x = (targetRect.size.width-rect.size.width)/2.f;
+        rect.origin.y = (targetRect.size.height-rect.size.height)/2.f;
+        break;
+      case UIInterfaceOrientationLandscapeLeft:
+      case UIInterfaceOrientationLandscapeRight:
+        rect.origin.x = (targetRect.size.height-rect.size.width)/2.f;
+        rect.origin.y = (targetRect.size.width-rect.size.height)/2.f;
+        break;
+    }
+  } else {
+    rect.origin.x = (targetRect.size.width-rect.size.width)/2.f;
+    rect.origin.y = (targetRect.size.height-rect.size.height)/2.f;
+  }
   return rect;
 }
 
